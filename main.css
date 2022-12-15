@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Source+Sans+Pro&display=swap');
+/*
+font-family: 'Playfair Display', serif;
+font-family: 'Source Sans Pro', sans-serif;
+*/
+
+/* Text stylings below*/
+h1 {
+    font-family: 'Playfair Display', serif;
+}
+h2 {
+    font-family: 'Playfair Display', serif;
+}
+p {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+/*column stylings below*/
+* {
+    box-sizing: border-box;
+}
+.header {
+    grid-area: header;
+    background-color: #f1f1f1;
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+}
+.left {
+    grid-area: left;
+    text-align: center;
+    margin: 0 0 20px 0;
+}
+.left2 {
+    grid-area: left;
+    margin: 80px;
+}
+.middle {
+    grid-area: middle;
+    text-align: center;
+    margin: 0 0 20px 0;
+}
+.middle2 {
+    grid-area: middle;
+    margin: 80px;
+}
+.right {
+    grid-area: right;
+    text-align: center;
+    margin: 0 0 20px 0;
+}
+.right2 {
+    grid-area: right;
+    margin: 70px 0 0 50px;
+}
+.footer {
+    grid-area: footer;
+    background-color: #f1f1f1;
+    padding: 10px;
+    text-align: center;
+}
+
+/*Container*/
+.grid-container {
+    display: grid;
+    grid-template-areas: 
+      'header header header header header header' 
+      'left left middle middle right right' 
+      'footer footer footer footer footer footer';
+} 
